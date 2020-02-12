@@ -16,6 +16,6 @@ export default function reducer(state, action) {
     case STUDY:
       return { ...state, coffees: state.coffees + 1 };
     default:
-      console.log(`unhandled name: ${name}`);
+      return state;
   }
 }

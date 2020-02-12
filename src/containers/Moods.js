@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Controls from '../components/controls/Controls';
 import Face from '../components/face/Face';
+import reducer from '../reducers/emojiReducer';
+import { drinkCoffee, eatSnack, takeNap, study } from '../actions/emojiActions';
 
 const actions = [
   { name: 'DRINK_COFFEE', text: 'Drink Coffee', stateName: 'coffees' },
