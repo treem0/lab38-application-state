@@ -6,4 +6,10 @@ describe('emoji action creators', () => {
 
     expect(action).toEqual({ type: DRINK_COFFEE });
   });
+
+  it('creates an eat snack action', () => {
+    const action = eatSnack();
+
+    expect(action).toEqual({ type: EAT_SNACK });
+  });
 });
