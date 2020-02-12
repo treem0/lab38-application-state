@@ -1,5 +1,5 @@
 import reducer from './emojiReducer';
-import { drinkCoffee, eatSnack, takeNap } from '../actions/emojiActions';
+import { drinkCoffee, eatSnack, takeNap, study } from '../actions/emojiActions';
 
 
 describe('emoji reducer', () => {
@@ -36,5 +36,14 @@ describe('emoji reducer', () => {
     const newState = reducer(initialState, action);
 
     expect(newState).toEqual({ naps: 1 });
+  });
+
+  it('handles the study action', () => {
+    const action = study();
+    const initialState = { studies: 0 };
+
+    const newState = reducer(initialState, action);
+
+    expect(newState).toEqual({ studies: 1 });
   });
 });
