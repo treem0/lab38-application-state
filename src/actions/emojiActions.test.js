@@ -12,4 +12,10 @@ describe('emoji action creators', () => {
 
     expect(action).toEqual({ type: EAT_SNACK });
   });
+
+  it('creates a take nap action', () => {
+    const action = takeNap();
+
+    expect(action).toEqual({ type: TAKE_NAP });
+  });
 });
