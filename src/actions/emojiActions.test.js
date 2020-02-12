@@ -18,4 +18,10 @@ describe('emoji action creators', () => {
 
     expect(action).toEqual({ type: TAKE_NAP });
   });
+
+  it('creates a study action', () => {
+    const action = study();
+
+    expect(action).toEqual({ type: STUDY });
+  });
 });
