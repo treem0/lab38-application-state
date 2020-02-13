@@ -20,10 +20,6 @@ const Moods = () => {
   const handleSelection = (actionCreator) => dispatch(actionCreator());
   const emojiFace = getFace(state);
 
-  // const handleCoffee = () => dispatch(drinkCoffee());
-  // const handleSnack = () => dispatch(eatSnack());
-  // const handleNap = () => dispatch(takeNap());
-  // const handleStudy = () => dispatch(study());
  
   return (
     <>
