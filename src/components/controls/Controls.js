@@ -4,8 +4,8 @@ import styles from './Controls.css';
 
 const Controls = ({ actions, handleSelection }) => (
   <section className={styles.Controls}>
-    {actions.map(({ name, text, count }) => (
-      <button key={name} onClick={() => handleSelection(name)}>
+    {actions.map(({ name, text, count, actionCreator }) => (
+      <button key={name} onClick={() => handleSelection(actionCreator)}>
         {text || name} {!!count && `- ${count}`}
       </button>
     ))}
